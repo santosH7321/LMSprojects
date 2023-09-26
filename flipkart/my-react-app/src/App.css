@@ -1,0 +1,23 @@
+body{
+  background-color: rgb(247, 238, 215);
+  
+
+}
+.App {
+  color: #1aa4d2;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3xl;
+  font-weight: 800;
+  
+}
+.App ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+
+
+
+
