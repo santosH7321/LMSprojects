@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Dice</title>
+    <style>
+        /* Style for the dice container */
+        .dice-container {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(38, 208, 89);
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+        }
+
+        /* Animation for rolling the dice */
+        @keyframes roll {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(90deg); }
+            50% { transform: rotate(180deg); }
+            75% { transform: rotate(270deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Add animation to the dice when rolling */
+        .rolling {
+            animation: roll 1s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="dice-container" id="dice">1</div>
+
+    <script>
+        const dice = document.getElementById('dice');
+        dice.addEventListener('click', () => {
+            // Remove the rolling class to reset the animation
+            dice.classList.remove('rolling');
+
+            // Generate a random dice value (1 to 6)
+            const randomValue = Math.floor(Math.random() * 6) + 1;
+
+            // Set the dice value
+            dice.textContent = randomValue;
+
+            // Add the rolling class to trigger the animation
+            dice.classList.add('rolling');
+
+            // Remove the rolling class after the animation completes
+            setTimeout(() => {
+                dice.classList.remove('rolling');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
