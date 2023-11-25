@@ -23,6 +23,7 @@
     transform: rotateX(75deg) translateY(-200px) translateZ(-100px);
     border-radius: 20px;
     border-style: inset;
+    /* border-bottom: 1rem solid; */
 }
 body{
     background-color: gray;
