@@ -28,6 +28,7 @@ body{
 .card:hover{
     width: 600px;
     transition-delay:.5s;
+    
 }
 
 .circle{
@@ -39,25 +40,27 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    filter: drop-shadow(0 0 2rem crimson);
 }
 
 .circle::before{
     content: "";
     position: absolute;
-    top: 30;
-    left: 2;
-    right: 2;
+    top: 30px;
+    left: 2px;
+    right: 2px;
     height: 350px;
     width: 350px;
     border-radius: 50%;
     background-color: #191919;
     border: 8px solid var(--clr);
-    filter: drop-shadow(0 0 10px var(--clr)
-    drop-shadow(0 0 60px var(--clr)));
+    /* filter: drop-shadow(0 0 10px var(--clr)
+    drop-shadow(0 0 60px var(--clr))); */
 
     transition: .6s;
     transition-delay: .75s,1s;
+
+    filter: drop-shadow(0 0 2rem crimson);
 }
 
 
@@ -92,8 +95,8 @@ body{
 
 .card:hover .product_img{
     top: 25%;
-    left: 72%;
-    transition: 500px;
+    left: 82%;
+    transition: 600px;
     transition: .5s ease-in-out;
     transform: translate(-50%, -50%) scale(1) rotate(15deg);
 
@@ -107,7 +110,11 @@ body{
     visibility: hidden;
     padding: 20px, 20px, 20px;
     transition: .5s;
-    /* color: white; */
+
+}
+.card:hover .content{
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -126,17 +133,27 @@ body{
 
 .content p{
     color: white;
+    margin: 5px;
+    /* margin-bottom: 5px; */
+   
 }
 
 .content a{
-    position: relative;
+    
+    position: absolute;
     color: black;
     background-color: white;
+    margin: 0px 5px;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     display: inline;
     text-decoration: none;
     font-weight: 600;
-    margin-top: 10px;
+    border-style: inset solid;
 }
+.btn:hover{
+    color: white;
+    background-color: #5454e584;
+}
+
 
