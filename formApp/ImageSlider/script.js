@@ -88,6 +88,15 @@ const slider = () =>{
         des.classList.add("des");
         des.textContent = item.desc;
 
+
+        const button = document.createElement("button");
+        button.textContent = "See more";
+
+        content.appendChild(name);
+        content.appendChild(des);
+        content.appendChild(button);
+        slideItem.appendChild(content);
+        slideRef.appendChild(slideItem);
     });
 
     document.getElementById("root").appendChild(container);
