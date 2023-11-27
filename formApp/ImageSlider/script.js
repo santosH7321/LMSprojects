@@ -18,37 +18,37 @@ const slider = () =>{
     const data = [
         {
             id: 1,
-            imagUrl: "./Images/colorPhoto.jpeg",
+            imagUrl: "./Images/img1.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
             name: "EXPLORE MOON ART",
         },
         {
             id: 2,
-            imagUrl: "./Images/imaging.jpeg",
+            imagUrl: "./Images/img2.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
             name: "EXPLORE MOON ART",
         },
         {
             id: 3,
-            imagUrl: "./Images/invertedImage.jpeg",
+            imagUrl: "./Images/img3.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
             name: "EXPLORE MOON ART",
         },
         {
             id: 4,
-            imagUrl: "./Images/manyColor.jpeg",
+            imagUrl: "./Images/img4.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
             name: "EXPLORE MOON ART",
         },
         {
             id: 5,
-            imagUrl: "./Images/simplePaint.jpeg",
+            imagUrl: "./Images/img5.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
             name: "EXPLORE MOON ART",
         },
         {
             id: 6,
-            imagUrl: "./Images/withLaptop.jpeg.jpeg",
+            imagUrl: "./Images/img6.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
             name: "EXPLORE MOON ART",
         },
@@ -109,7 +109,7 @@ const slider = () =>{
         prevButton.addEventListener("click", handleClickPrev);
 
         const prevIcon = document.createElement("i");
-        prevButton.className = "fa fa-angle-left";
+        prevButton.className = "fa-solid fa-angle-left";
         prevButton.appendChild(prevIcon);
 
         // Create the next Button 
@@ -117,7 +117,7 @@ const slider = () =>{
         nextButton.addEventListener("click", handleClickNext);
 
         const nextIcon = document.createElement("i");
-        nextIcon.className = "fa fa-angle-right";
+        nextIcon.className = "fa-solid fa-angle-right";
         nextButton.appendChild(nextIcon);
 
         // Append button to tho button 
