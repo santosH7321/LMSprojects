@@ -74,7 +74,7 @@ body{
     text-align: left;
     padding: 0;
     color: #fff;
-    color: #eee;
+    /* color: #eee; */
     transform: translate(0, -50%);
     display: none;
 }
@@ -84,22 +84,34 @@ body{
     z-index: 1;
 }
 
-.item .none{
+.item, .none{
     font-size: 50px;
     font-weight: bold;
     opacity: 0;
     animation: showcontent 1s ease-in-out 1 forwards;
 
 }
-.item .dos{
-    font-size: 13px;
+#prev, #next{
+    font-size: 25px;
+    color: red;
+    float: left;
+    border: 4px solid red;
+    border-radius: 10px;
+
+    /* margin: 5px; */
+}
+.item, .desc{
+    font-size: 25px;
     margin: 20px 0;
     opacity: 0;
-    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
-
+    animation: showcontent 2s ease-in-out 0.3s 1 forwards;
+    
+    
 }
+
 .item button{
     padding: 10px 20px;
+    margin-top:10px;
     border: none;
     border-radius: 4px;
     opacity: 0;
@@ -125,7 +137,7 @@ body{
 
     }
 }
-buttons{
+.buttons{
     position: absolute;
     bottom: 30px;
     z-index: 22222;

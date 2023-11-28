@@ -85,7 +85,7 @@ const slider = () =>{
         name.textContent = item.name;
 
         const des = document.createElement("div");
-        des.classList.add("des");
+        des.classList.add("desc");
         des.textContent = item.desc;
 
 
@@ -101,7 +101,7 @@ const slider = () =>{
         //Create the buttons div
         const buttons = document.createElement("div");
 
-        button.classList.add("buttons");
+        button.classList.add(".buttons");
 
         // create a prev button
         const prevButton = document.createElement("button");
@@ -114,6 +114,7 @@ const slider = () =>{
 
         // Create the next Button 
         const nextButton = document.createElement("button");
+        nextButton.id = "next";
         nextButton.addEventListener("click", handleClickNext);
 
         const nextIcon = document.createElement("i");
