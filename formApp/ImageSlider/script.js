@@ -20,37 +20,37 @@ const slider = () =>{
             id: 1,
             imagUrl: "./Images/img1.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
-            name: "EXPLORE MOON ART",
+            name: "GOOD MORNING EVERYONE",
         },
         {
             id: 2,
             imagUrl: "./Images/img2.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
-            name: "EXPLORE MOON ART",
+            name: "GOOD EVENING EVERYONE",
         },
         {
             id: 3,
             imagUrl: "./Images/img3.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
-            name: "EXPLORE MOON ART",
+            name: "PRO AMAZED",
         },
         {
             id: 4,
             imagUrl: "./Images/img4.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
-            name: "EXPLORE MOON ART",
+            name: "GREAT SESSION",
         },
         {
             id: 5,
             imagUrl: "./Images/img5.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
-            name: "EXPLORE MOON ART",
+            name: "EXPLORE CAR RACE",
         },
         {
             id: 6,
             imagUrl: "./Images/img6.jpg",
             desc: "Some beautiful moons cannot be created without getting creativity.",
-            name: "EXPLORE MOON ART",
+            name: "EXPLORE CLIMATE",
         },
     ];
 
