@@ -1,25 +1,27 @@
-const { count } = require('console');
+// const { count } = require('console');
 const express = require('express');
 const app = express();
 
-const PORT = 3002;
-app.listen(PORT, ()=>{
-    console.log(`Server is runnig at port: ${PORT}`);
-});
 
-function calculateSum(conunter){
+
+function calculateSum(counter){
     var sum = 0;
-    for(var i = 0; i<=conunter; i++){
+    for(var i = 0; i<=counter; i++){
         sum = sum + i;
 
     }
     return sum;
 }
 function handleFirstRequest(req, res){
-    var conunter = req.query.counter;
-    var calculateSum = calculateSum(conunter);
-    var answer = "The sum is "+ calculateSum;
+    var calculateSum = calculateSum(100);
+    var answer = "The sum is " + calculateSum;
     res.send(answer);
 }
 
 app.get('/handleSum', handleFirstRequest);
+
+
+const PORT = 3002;
+app.listen(PORT, ()=>{
+    console.log(`Server is runnig at port: ${PORT}`);
+});
