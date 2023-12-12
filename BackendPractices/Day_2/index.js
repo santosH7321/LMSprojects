@@ -40,7 +40,6 @@ app.get('/diff', (req, res) =>{
     }
     const finalResult = diff(5, 3);
     res.send(`Your diffrence is: ${finalResult}`);
-    
 });
 
 const PORT = 3000; // You can use any port you prefer
